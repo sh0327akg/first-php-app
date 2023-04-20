@@ -54,7 +54,7 @@ services:
     phpmyadmin:
         image: 'phpmyadmin/phpmyadmin'
         links:
-            - mysql
+            - mysql:mysql
         ports:
             - 8080:80
         environment:
